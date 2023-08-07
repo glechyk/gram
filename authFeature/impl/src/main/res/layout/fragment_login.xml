@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.glechyk.gram.delta.authFeature.impl.presentation.screen.login.LoginFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/titleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_interngram_gradient"
+        app:layout_constraintBottom_toTopOf="@+id/phoneEmailInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneEmailInputLayout"
+        style="@style/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:hint="@string/login_screen_phone_number_or_email"
+        app:layout_constraintBottom_toTopOf="@+id/enterPasswordInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/titleImageView"
+        tools:layout_editor_absoluteX="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneEmailEditText"
+            style="@style/regular.caption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/enterPasswordInputLayout"
+        style="@style/input_text.password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/login_screen_password"
+        app:layout_constraintBottom_toTopOf="@+id/errorTextView"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEmailInputLayout"
+        tools:layout_editor_absoluteX="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterPasswordEditText"
+            style="@style/regular.caption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/errorTextView"
+        style="@style/regular.caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/network_validation_error_login_invalid"
+        android:textColor="@color/error_red"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/forgotPasswordTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterPasswordInputLayout" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/forgotPasswordTextView"
+        style="@style/regular.caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/login_screen_forgot_password"
+        android:textColor="@color/light_blue"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/errorTextView" />
+
+    <com.glechyk.gram.delta.uikit.ProgressButton
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/orTextView"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPasswordTextView"
+        app:textProgressButton="@string/login_screen_button"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/orTextView"
+        style="@style/regular.footnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/login_screen_or"
+        android:textColor="@color/black_65"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/loginFacebookTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/loginFacebookTextView"
+        style="@style/bold.footnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:drawableStart="@drawable/logo_facebook"
+        android:drawablePadding="8dp"
+        android:text="@string/login_screen_log_in_with_facebook"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/loginGoogleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orTextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/loginGoogleTextView"
+        style="@style/bold.footnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:drawableStart="@drawable/logo_google"
+        android:drawablePadding="8dp"
+        android:text="@string/login_screen_log_in_with_google"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/createAccountLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginFacebookTextView" />
+
+    <LinearLayout
+        android:id="@+id/createAccountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/notMemberTextView"
+            style="@style/regular.footnote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="@string/login_screen_not_a_member"
+            android:textColor="@color/black_65" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/createAccountTextView"
+            style="@style/regular.footnote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_screen_create_an_account"
+            android:textColor="@color/light_blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

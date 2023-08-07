@@ -1,0 +1,96 @@
+<resources>
+
+    <!--Login Screen-->
+    <string name="login_screen_phone_number_or_email">Phone number or email</string>
+    <string name="login_screen_password">Password</string>
+    <string name="login_screen_forgot_password">Forgot password?</string>
+    <string name="login_screen_button">Log in</string>
+    <string name="login_screen_or">OR</string>
+    <string name="login_screen_log_in_with_facebook">Log in with Facebook</string>
+    <string name="login_screen_log_in_with_google">Log in with Google</string>
+    <string name="login_screen_not_a_member">Not a member?</string>
+    <string name="login_screen_create_an_account">Create an account</string>
+
+    <!--Phone Email Screen-->
+    <string name="phone_email_screen_title">Enter phone number or\nemail address</string>
+    <string name="phone_email_screen_phone_tab">Phone</string>
+    <string name="phone_email_screen_email_tab">Email</string>
+    <string name="phone_email_screen_log_in">Log in</string>
+    <string name="phone_email_screen_have_an_account">Have an account?</string>
+    <string name="phone_email_screen_terms_and_conditions"><u>Terms and Conditions</u></string>
+    <string name="phone_email_screen_terms_and_conditions_agree">By signing up you agree with our</string>
+
+    <!--Password Screen-->
+    <string name="password_screen_title">Create a password</string>
+    <string name="password_screen_8_characters">8+ characters</string>
+    <string name="password_screen_1_uppercase">1 uppercase</string>
+    <string name="password_screen_1_lowercase">1 lowercase</string>
+    <string name="password_screen_1_digit">1 digit</string>
+    <string name="password_screen_1_special_character">1 special character</string>
+    <string name="password_screen_enter_password">Password</string>
+    <string name="password_screen_confirm_password">Confirm password</string>
+
+    <!--Nickname Screen-->
+    <string name="nickname_screen_title">Create nickname</string>
+    <string name="nickname_screen_description">Choose a nickname for your new account. You can always change it later</string>
+    <string name="nickname_screen_hint">Nickname</string>
+
+    <!--Full Name Screen-->
+    <string name="full_name_screen_title">Add your full name</string>
+    <string name="full_name_screen_description">Add your name so that your friends can find you</string>
+    <string name="full_name_screen_hint">Full name</string>
+
+    <!--Enter Your Birthday Screen-->
+    <string name="enter_your_birthday_screen_title">Enter your birthday</string>
+    <string name="enter_your_birthday_screen_description_1">This information won\'t be visible in your profile</string>
+    <string name="enter_your_birthday_screen_description_2">Use your own birthday even if this account is for business, a pet or something else</string>
+    <string name="enter_your_birthday_screen_hint">Select the date</string>
+
+    <!--Verify Code Screen-->
+    <string name="verify_code_screen_title">Enter confirmation code</string>
+    <string name="verify_code_screen_description_email">Enter 6-digit code sent to your email.</string>
+    <string name="verify_code_screen_description_phone">Enter 6-digit code sent to your phone number.</string>
+    <string name="verify_code_screen_hint">The code did not come?</string>
+    <string name="verify_code_screen_resend_error">The request limit has been exceeded. You will be able to resubmit your request in 6 minutes.</string>
+    <string name="verify_code_screen_resend">Resend</string>
+    <string name="verify_code_screen_change_phone">Change phone number</string>
+    <string name="verify_code_screen_change_email">Change email address</string>
+
+    <!--Validation Login-->
+    <string name="network_validation_error_login_invalid">Invalid phone/email or password.</string>
+    <string name="network_validation_error_login_incorrect">Incorrect mail or phone number</string>
+    <string name="network_validation_error_login_alert_message">The mail or phone number that you’ve entered doesn’t appear to belong to an account. Please check your mail or phone number and try again.</string>
+    <string name="network_validation_error_login_alert_button">Try again</string>
+
+    <!--Validation Email-->
+    <string name="validation_error_email">Please enter valid email.</string>
+    <string name="network_validation_error_email">A user with this email is already registered. Please try entering another email.</string>
+
+    <!--Validation Phone Number-->
+    <string name="validation_error_phone">Looks like your phone number may be incorrect. Please try entering your full number.</string>
+    <string name="network_validation_error_phone">A user with this phone number is already registered. Please try entering another phone number.</string>
+
+    <!--Validation Password-->
+    <string name="validation_error_password_enter">Password doesn’t meet minimal requirements</string>
+    <string name="validation_error_password_confirm">The passwords don\'t match.</string>
+
+    <!--Validation Nickname-->
+    <string name="validation_error_nickname_less_8">Please enter minimum 8 symbols.</string>
+    <string name="validation_error_nickname_more_than_20">Please enter maximum 20 symbols.</string>
+    <string name="validation_error_nickname_forbidden_symbols">Please use only Latin letters, numbers, and common punctuation characters.</string>
+    <string name="network_validation_error_nickname">This nickname is already being used. Please enter the another one.</string>
+
+    <!--Validation Full Name-->
+    <string name="validation_error_full_name_less_2">Please enter minimum 2 letters.</string>
+    <string name="validation_error_full_name_more_than_35">Please enter maximum 35 symbols.</string>
+    <string name="validation_error_full_name_forbidden_symbols">The username should contain only Cyrillic or Latin letters, space and the following characters: hyphen "-" and apostrophe " ’ ".</string>
+
+    <!--Validation Verification Code-->
+    <string name="validation_error_verification_code">The code is invalid.</string>
+
+    <!--Common-->
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="confirm">Confirm</string>
+
+</resources>

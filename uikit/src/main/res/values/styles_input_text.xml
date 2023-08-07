@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Material Input Text Styles  -->
+    <style name="input_text" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="hintTextAppearance">@style/regular.caption1</item>
+        <item name="android:textColorHint">@color/black_65</item>
+        <item name="boxBackgroundColor">@color/white_inputs</item>
+        <item name="endIconTint">@color/black_45</item>
+        <item name="errorTextColor">@color/error_red</item>
+        <item name="boxStrokeErrorColor">@color/error_red</item>
+        <item name="errorIconDrawable">@drawable/ic_end_error</item>
+        <item name="boxStrokeWidth">1dp</item>
+    </style>
+
+    <style name="input_text.bio">
+        <item name="counterEnabled">true</item>
+        <item name="counterMaxLength">120</item>
+    </style>
+
+    <style name="input_text.phone">
+        <item name="endIconMode">clear_text</item>
+        <item name="endIconDrawable">@drawable/ic_end_error</item>
+        <item name="prefixText">UA +380</item>
+        <item name="prefixTextAppearance">@style/regular.caption1</item>
+        <item name="android:hint">Phone number</item>
+    </style>
+
+    <style name="input_text.email">
+        <item name="endIconMode">clear_text</item>
+        <item name="endIconDrawable">@drawable/ic_end_error</item>
+        <item name="android:hint">Email</item>
+    </style>
+
+    <style name="input_text.password">
+        <item name="endIconMode">password_toggle</item>
+        <item name="errorIconDrawable">@null</item>
+    </style>
+
+</resources>

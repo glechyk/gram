@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Material Primary Button  -->
+    <style name="material_button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/bold.footnote</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="material_button.short">
+        <item name="android:layout_width">80dp</item>
+    </style>
+
+    <!--  Outlined Button  -->
+    <style name="outlined_button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/bold.footnote</item>
+        <item name="android:textColor">@color/black_45</item>
+        <item name="android:padding">12dp</item>
+        <item name="backgroundTint">@color/white_inputs</item>
+    </style>
+
+    <style name="outlined_button.short">
+        <item name="android:layout_width">80dp</item>
+    </style>
+
+    <style name="outlined_button.gradient">
+        <item name="android:textColor">@color/violet</item>
+        <item name="strokeColor">@color/violet</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_feature_nav_graph"
+    app:startDestination="@id/feedPageFragment">
+
+    <fragment
+        android:id="@+id/feedPageFragment"
+        android:name="com.glechyk.gram.delta.feedPageFeature.impl.presentation.screen.FeedPageFragment"
+        android:label="FeedPageFragment">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="interngram://com.chi.interngram.delta.mainFeature/fragment_feed_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchPageFragment"
+        android:name="com.glechyk.gram.delta.searchPageFeature.impl.presentation.screen.SearchPageFragment"
+        android:label="SearchPageFragment">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="interngram://com.chi.interngram.delta.mainFeature/fragment_search_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPostFragment"
+        android:name="com.glechyk.gram.delta.newPostPageFeature.impl.presentation.screen.NewPostFragment"
+        android:label="NewPostFragment">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="interngram://com.chi.interngram.delta.mainFeature/fragment_new_post" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.glechyk.gram.delta.notificationsPageFeature.impl.presentation.screen.NotificationsFragment"
+        android:label="NotificationsFragment">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="interngram://com.chi.interngram.delta.mainFeature/fragment_notifications" />
+    </fragment>
+    <fragment
+        android:id="@+id/userPageFragment"
+        android:name="com.glechyk.gram.delta.userPageFeature.impl.presentation.screen.UserPageFragment"
+        android:label="UserPageFragment">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="interngram://com.chi.interngram.delta.mainFeature/fragment_user_page" />
+    </fragment>
+
+</navigation>

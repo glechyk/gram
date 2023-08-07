@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_feature_nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.glechyk.gram.delta.authFeature.impl.presentation.screen.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_phoneEmailFragment"
+            app:destination="@id/phoneEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneEmailFragment"
+        android:name="com.glechyk.gram.delta.authFeature.impl.presentation.screen.signup.phoneEmail.PhoneEmailFragment"
+        android:label="fragment_phone_email"
+        tools:layout="@layout/fragment_phone_email">
+        <action
+            android:id="@+id/action_phoneEmailFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.glechyk.gram.delta.authFeature.impl.presentation.screen.signup.password.PasswordFragment"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password">
+        <action
+            android:id="@+id/action_passwordFragment_to_nicknameFragment"
+            app:destination="@id/nicknameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nicknameFragment"
+        android:name="com.glechyk.gram.delta.authFeature.impl.presentation.screen.signup.nickname.NicknameFragment"
+        android:label="fragment_nickname"
+        tools:layout="@layout/fragment_nickname" >
+        <action
+            android:id="@+id/action_nicknameFragment_to_fullNameFragment"
+            app:destination="@id/fullNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullNameFragment"
+        android:name="com.glechyk.gram.delta.authFeature.impl.presentation.screen.signup.fullName.FullNameFragment"
+        android:label="fragment_full_name"
+        tools:layout="@layout/fragment_full_name">
+        <action
+            android:id="@+id/action_fullNameFragment_to_birthdayFragment"
+            app:destination="@id/birthdayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/birthdayFragment"
+        android:name="com.glechyk.gram.delta.authFeature.impl.presentation.screen.signup.birthday.BirthdayFragment"
+        android:label="fragment_birthday"
+        tools:layout="@layout/fragment_birthday" >
+        <action
+            android:id="@+id/action_birthdayFragment_to_verificationCodeFragment"
+            app:destination="@id/verificationCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationCodeFragment"
+        android:name="com.glechyk.gram.delta.authFeature.impl.presentation.screen.signup.verifyCode.VerificationCodeFragment"
+        android:label="fragment_verification_code"
+        tools:layout="@layout/fragment_verification_code">
+        <action
+            android:id="@+id/action_verifyCodeFragment_to_phoneEmailFragment"
+            app:destination="@id/phoneEmailFragment"
+            app:popUpTo="@id/phoneEmailFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_verificationCodeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+</navigation>
